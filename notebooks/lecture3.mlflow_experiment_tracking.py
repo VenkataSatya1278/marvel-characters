@@ -1,14 +1,11 @@
 # Databricks notebook source
-<<<<<<< HEAD
 #import json
-=======
 !pip install dotenv
 %restart_python
 
 # COMMAND ----------
 
 import json
->>>>>>> a86f3ca86dca1233530734cc6d33edfaf1ad1de7
 import os
 import json
 import mlflow
@@ -120,11 +117,8 @@ run_info = mlflow.get_run(run_id=f"{run_id}").to_dictionary()
 print(run_info)
 
 # COMMAND ----------
-<<<<<<< HEAD
 # start a run with the run_id
-=======
 
->>>>>>> a86f3ca86dca1233530734cc6d33edfaf1ad1de7
 mlflow.start_run(run_id=run_id)
 
 # COMMAND ----------
