@@ -1,7 +1,7 @@
 # Databricks notebook source
-import json
+#import json
 import os
-
+import json
 import mlflow
 from dotenv import load_dotenv
 
@@ -83,7 +83,7 @@ print(run_info["data"]["metrics"])
 print(run_info["data"]["params"])
 
 # COMMAND ----------
-
+# get run by id
 run_id = mlflow.search_runs(
     experiment_names=["/Shared/marvel-demo"],
     filter_string="tags.git_sha='1234567890abcd'",
@@ -92,6 +92,7 @@ run_info = mlflow.get_run(run_id=f"{run_id}").to_dictionary()
 print(run_info)
 
 # COMMAND ----------
+# start a run with the run_id
 mlflow.start_run(run_id=run_id)
 
 # COMMAND ----------
