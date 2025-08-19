@@ -4,7 +4,10 @@
     "_artifact_location": "dbfs:/databricks/mlflow-tracking/3133010559072524",
     "_lifecycle_stage": "active",
     "_tags": {
+<<<<<<< HEAD
         "mlflow.experimentKind": "custom_model_development",
+=======
+>>>>>>> a86f3ca86dca1233530734cc6d33edfaf1ad1de7
         "mlflow.ownerId": "77171607933991",
         "repository_name": "marvelousmlops/marvel-characters",
         "mlflow.experiment.sourceName": "/Shared/marvel-demo",
